@@ -8,4 +8,14 @@ body {
 
 .navbar {
      height: 150px;
+
+}
+
+nav .brand-logo {
+     padding-top: 30px;
+     padding-left: 15px;
+}
+
+.right {
+     padding-top: 30px;
 }

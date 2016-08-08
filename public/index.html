@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="GraceGamble">
      <head>
           <title>Grace H Gamble</title>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
+          <link rel="icon" href="/gfavicon.png" />
 
           <!-- JQuery -->
      <script type="text/javascript"
@@ -35,22 +36,26 @@
 
      <link rel="stylesheet" href="main.css">
 
+          <!-- Main.js -->
+     <script type="text/javascript" src="main.js"></script>
+
+
      </head>
      <body>
           <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
       <nav class="navbar">
            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Grace Gamble</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                     <li><a href="">About Me</a></li>
-                     <li><a href="">Projects</a></li>
-                     <li><a href="">Experience</a></li>
-                     <li><a href="">Contact</a></li>
+                <a ui-sref="home" href="/" class="brand-logo">Grace Gamble</a>
+                <ul id="nav-mobile nav-text" class="right hide-on-med-and-down">
+                     <li><a ui-sref="projects" href="#">Projects</a></li>
+                     <li><a ui-sref="experience" href="#">Experience</a></li>
+                     <li><a ui-sref="contact" href="#">Contact</a></li>
                 </ul>
            </div>
       </nav>
+      <div ui-view></div>
      </body>
 </html>
