@@ -16,6 +16,15 @@ nav .brand-logo {
      padding-left: 15px;
 }
 
+.brand-logo:hover {
+     color: #44596e;
+}
+
+.link:hover {
+     text-decoration: none;
+     background-color: #ee6e73;
+}
+
 .right {
      padding-top: 30px;
 }
