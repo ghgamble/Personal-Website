@@ -49,6 +49,14 @@ nav .brand-logo {
 }*/
 
 /* HOME PAGE */
+.title {
+     text-align: center;
+     font-size: 25px;
+     color: #bc4549;
+     margin-bottom: 30px;
+     margin-top: 30px;
+}
+
 .home-image {
      border-radius: 250px;
      width: 300px;
