@@ -10,53 +10,48 @@
      <script type="text/javascript"
      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-          <!-- Bootstrap - Latest compiled and minified CSS -->
+         <!-- Bootstrap - Latest compiled and minified CSS -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-        <!-- Optional theme -->
+       <!-- Optional theme -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-          <!-- Latest compiled and minified JavaScript -->
+         <!-- Latest compiled and minified JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-          <!-- Angular Framework -->
+         <!-- Angular Framework -->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
 
-          <!-- UI-Router -->
+         <!-- UI-Router -->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 
-          <!-- Bower -->
+         <!-- Bower -->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 
-          <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+         <!-- Main.css -->
+     <link rel="stylesheet" href="main.css" type="text/css" />
 
-          <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-
-     <link rel="stylesheet" href="main.css">
-
-          <!-- Main.js -->
+         <!-- Main.js -->
      <script type="text/javascript" src="main.js"></script>
 
 
      </head>
-     <body>
-          <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
-      <nav class="navbar">
-           <div class="nav-wrapper">
-                <a ui-sref="home" href="/" class="brand-logo link">Grace H Gamble</a>
-                <ul id="nav-mobile nav-text" class="right hide-on-med-and-down navs">
-                     <li class="title">FULL STACK WEB DEVELOPER</li>
-                     <li><a class="link" ui-sref="projects" href="#">Projects</a></li>
-                     <li><a class="link" ui-sref="experience" href="#">Experience</a></li>
-                     <li><a class="link" ui-sref="contact" href="#">Contact</a></li>
-                </ul>
-           </div>
-      </nav>
-      <div ui-view></div>
+     <body class="container-fluid">
+          <div class="jumbotron">
+               <h1 class="name">
+                    <a ui-sref="home" href="/" class="brand-logo link">Grace H Gamble</a>
+               </h1>
+               <nav class="navbar navbar-inverse">
+                    <ul id="li-font" class="nav navbar-nav">
+                         <li class="link"><a ui-sref="projects" href="#">PROJECTS</a></li>
+                         <li class="link"><a ui-sref="experience" href="#">EXPERIENCE</a></li>
+                         <li class="link"><a ui-sref="contact" href="#">CONTACT</a></li>
+                    </ul>
+               </nav>
+          </div>
+          <div ui-view></div>
      </body>
+
+
 </html>
